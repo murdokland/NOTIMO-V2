@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget xmlns="http://www.w3.org/ns/widgets"
 	xmlns:gap="http://phonegap.com/ns/1.0"
-	id="GY86BP8AU6.com.lesmercenaires.notimo" 
+	id="com.lesmercenaires.notimo" 
 	version="1.6.0" 
-	versionCode = "340">
+	versionCode = "341">
 
     <name>Notimo</name>
     <description>
