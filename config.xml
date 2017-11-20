@@ -37,8 +37,6 @@
 	<allow-navigation href="*"/>
     <allow-intent href="*"/>
 
-    <splash src="splash.png" />
-	<icon src="icon.png" />
 
 	<platform name="android">
 		<icon density="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
