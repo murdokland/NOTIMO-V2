@@ -302,7 +302,9 @@
 							if (item.charges.length > 0){fiche += '<span class="title">Charges : </span>'+ item.charges+'€<br>'}
 
 							if ((item.GpsLatitudeFloue.length)&&(item.GpsLongitudeFloue.length) > 0){
-								fiche += '<li><a href="#" data-role="button" rel="external" target="_blank" onclick="window.open(\''+google_maps(item.GpsLatitudeFloue,item.GpsLongitudeFloue)+'\', \'_system\', \'location=yes\');">Localiser</a></li>'}	
+								fiche += '<li><a href="#" data-role="button" rel="external" target="_blank" onclick="window.open(\''+google_maps(item.GpsLatitudeFloue,item.GpsLongitudeFloue)+'\', \'_system\', \'location=yes\');">Localiser</a></li>'}
+							else if (item.GpsLatitudeExacte.length) {fiche += '<li><a href="#" data-role="button" rel="external" target="_blank" onclick="window.open(\''+google_maps(item.GpsLatitudeExacte,item.GpsLongitudeFloueExacte)+'\', \'_system\', \'location=yes\');">Localiser</a></li>'}
+
 							
 							// if (item.Photo1.length > 0){diapo += '<img class="photoBienSlide" src="http://notimo-appli.com/data/'+item.Photo1+'" >'}
 							// if (item.Photo2.length > 0){diapo += '<img class="photoBienSlide" src="http://notimo-appli.com/data/'+item.Photo2+'" >'}
@@ -348,6 +350,8 @@
 							if (item.adresseNotaire.length > 0){fiche += verif(item.adresseNotaire)+'<br>'}
 							if (item.codpostNotaire.length > 0){fiche += verif(item.codpostNotaire)+' '}
 							if (item.villeNotaire.length > 0){fiche += verif(item.villeNotaire)+'<br><br>'}
+
+							if (item.negoNom.length > 0){fiche +='<strong>Négociateur : </strong><br>'}
 							if (item.negoPrenom.length > 0){fiche += verif(item.negoPrenom)+' '}
 							if (item.negoNom.length > 0){fiche += verif(item.negoNom)+'<br>'}
 							if (item.negoEmail.length > 0){fiche += '<a href="mailto:'+verif(item.negoEmail)+'?subject='+item.refClient+'" data-role="button" rel="external" target="_blank" data-inline="true">'+verif(item.negoEmail)+'</a><br>'}
